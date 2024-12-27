@@ -1,0 +1,44 @@
+.row {
+  max-width: $grid-max-width;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  gap: 6rem;
+
+  @include respond(tap-port) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.row-3 {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.row-4 {
+  display: grid;
+  grid-template-columns: 120rem;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.row-5 {
+  display: flex;
+  justify-content: center;
+  gap: 60rem;
+}
+
+.container {
+  margin: 0 auto;
+}

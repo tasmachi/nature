@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px
+  scroll-behavior: smooth;
+
+  @include respond(tap-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tap-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  padding: 3rem;
+
+  @include respond(tap-port) {
+    font-size: 50%;
+    padding: 0;
+  }
+}
